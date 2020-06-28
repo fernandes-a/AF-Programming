@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
     <title>Math Test</title>
 </head>
 <body>
     <section id="opening-screen"> 
-        <h1>Welcome to the year 6 maths test!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id recusandae illum sequi et officiis repellendus cum quo debitis qui?</p>
+        <h1>Welcome to your year six maths test!</h1>
+        <br>
+        <p>This test combines three topics from this year, numbers, shapes and place values. There will be 15 question, if you get all 15 right your teacher will give you any sticker you want. Type your answers into the boxes and once you are done, press the 'submit' button.</p>
+        <br>
+        <p>Make sure to wait for your teacher to say you can press the button!</p>
+        <br><br><br><br><br>
+        <button id="start-button">Start</button>
     </section> <!-- /opening-screen -->
 
     <section id="section1">
-        <h2>Question 1</h2>
+        <h1>Section 1 - Numbers</h1>
         <p>What is 5 + 10?</p>
         <ol>
             <li>20</li>
@@ -22,8 +31,8 @@
             <li>10</li>
         </ol>
         <input type="text" id="answer1" placeholder="Answer here">
+        <br><br>
         
-        <h2>Question 2</h2>
         <p>What is 5.4 + 5.7 + 6.0?</p>
         <ol>
             <li>17.4</li>
@@ -32,8 +41,8 @@
             <li>17.1</li>
         </ol>
         <input type="text" id="answer2" placeholder="Answer here">
+        <br><br>
         
-        <h2>Question 3</h2>
         <p>What is 432 &divide; 2?</p>
         <ol>
             <li>215</li>
@@ -42,8 +51,8 @@
             <li>316</li>
         </ol>
         <input type="text" id="answer3" placeholder="Answer here">
+        <br><br>
         
-        <h2>Question 4</h2>
         <p>What is 4 x 15?</p>
         <ol>
             <li>65</li>
@@ -52,8 +61,8 @@
             <li>30</li>
         </ol>
         <input type="text" id="answer4" placeholder="Answer here">
+        <br><br>
         
-        <h2>Question 5</h2>
         <p>What is '?': 8 x ? = 64</p>
         <ol>
             <li>4</li>
@@ -62,42 +71,40 @@
             <li>6</li>
         </ol>
         <input type="text" id="answer5" placeholder="Answer here">
+        <br><br>
 
-        <br>
-
-        <button id="done-button">Done</button>
+        <button class="done-button">Done</button>
     </section> <!-- /section1 -->
 
     <section id="section2">
-        <h2>Question 6</h2>
+        <h1>Section 2 - Shapes</h1>
         <p>How many sides does a cube have?</p>
         <input type="text" id="answer6" placeholder="Type the number">
+        <br><br>
         
-        <h2>Question 7</h2>
         <p>What is a 3D circle called?</p>
         <input type="text" id="answer7" placeholder="Type the word">
+        <br><br>
         
-        <h2>Question 8</h2>
         <p>All sides of a square are...</p>
         <input type="text" id="answer8" placeholder="One word answer">
+        <br><br>
         
-        <h2>Question 9</h2>
         <p>Is this symmetrical?</p>
         <img src="images/asymmetrical-image.jpg" alt="Tree image">
         <br>
         <input type="text" id="answer9" placeholder="Yes/No">
+        <br><br>
         
-        <h2>Question 10</h2>
         <p>How many sides does a circle have?</p>
         <input type="text" id="answer10" placeholder="Type the number">
-
-        <br>
+        <br><br>
         
-        <button id="done-button">Done</button>
+        <button class="done-button">Done</button>
     </section> <!-- /section2 -->
     
     <section id="section3">
-        <h2>Question 11</h2>
+        <h1>Section 3 - Place value</h1>
         <p>Write 145 on the place value grid below</p>
         <table>
             <tr>
@@ -113,8 +120,8 @@
                 <td><input type="text" id="answer11ones" placeholder="0"></td>
             </tr>
         </table>  
+        <br><br>
 
-        <h2>Question 12</h2>
          <p>Write 493 on the place value grid below</p>
         <table>
             <tr>
@@ -130,8 +137,8 @@
                 <td><input type="text" id="answer12ones" placeholder="0"></td>
             </tr>
         </table>  
+        <br><br>
         
-        <h2>Question 13</h2>
         <p>Write 42 on the place value grid below</p>
         <table>
             <tr>
@@ -146,9 +153,9 @@
                 <td><input type="text" id="answer13tens" placeholder="0"></td>
                 <td><input type="text" id="answer13ones" placeholder="0"></td>
             </tr>
-        </table>  
+        </table> 
+        <br><br> 
         
-        <h2>Question 14</h2>
         <p>Write 1000 on the place value grid below</p>
         <table>
             <tr>
@@ -163,9 +170,9 @@
                 <td><input type="text" id="answer14tens" placeholder="0"></td>
                 <td><input type="text" id="answer14ones" placeholder="0"></td>
             </tr>
-        </table>  
+        </table> 
+        <br><br> 
         
-        <h2>Question 15</h2>
         <p>Write 7503 on the place value grid below</p>
         <table>
             <tr>
@@ -180,11 +187,10 @@
                 <td><input type="text" id="answer15tens" placeholder="0"></td>
                 <td><input type="text" id="answer15ones" placeholder="0"></td>
             </tr>
-        </table>  
-
-        <br>
+        </table> 
+        <br><br> 
         
-        <button id="done-button">Done</button>
+        <button class="done-button">Done</button>
     </section> <!-- /section3 -->
 
     <section id="completed-screen">
