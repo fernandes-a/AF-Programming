@@ -43,17 +43,25 @@ button {
 }
 
 #start-button {
-    padding:  10px;
+    padding: 10px;
     width: 180px;
     height: 70px;
     margin: auto;
+    margin-top: 20vh;
     background-color: #1E5162;
     color: #ffffff;
     border: none;
     display: block;
+    transition: .2s;
 }
 
 #start-button:hover {
     background-color: #296E85;
     cursor: pointer;
+    transition: .2s;
+}
+
+#start-button:active {
+    outline: none;
+    background-color: #1E5162;
 }
