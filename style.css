@@ -65,3 +65,20 @@ button {
     outline: none;
     background-color: #1E5162;
 }
+
+#opening-screen, #section2, #section3, #completed-screen {
+    display: none;
+}
+
+#section1 {
+    background-color: #ADD8E6;
+    padding: 20px;
+}
+
+#section1 h1 {
+    font-size: 3em;
+}
+
+#section1 p {
+    padding: 20px 0px 0px 20px;
+}
