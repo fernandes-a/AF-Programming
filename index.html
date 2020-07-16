@@ -72,7 +72,10 @@
         <input type="text" id="answer5" placeholder="Answer here">
         <br>
 
-        <button class="done-button" onclick="markSection();">Done</button>
+        <p id="section-results1" style="display: none;"> </p>
+        <br>
+        <button class="done-button" onclick="markSection(1);">Done</button>
+        <button id="next-button1" onclick="nextSection('section1','section2');" style="display: none;">Next</button>
     </section> <!-- /section1 -->
 
     <section id="section2">
@@ -100,6 +103,7 @@
         <br>
         
         <button class="done-button">Done</button>
+        <p id="section-results2" style="display: none;"></p>
     </section> <!-- /section2 -->
     
     <section id="section3">
@@ -190,6 +194,7 @@
         <br>
         
         <button class="done-button">Done</button>
+        <p id="section-results3" style="display: none;"></p>
     </section> <!-- /section3 -->
 
     <section id="completed-screen">
