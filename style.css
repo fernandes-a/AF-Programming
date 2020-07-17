@@ -53,15 +53,27 @@ button {
     border: none;
     display: block;
     transition: .2s;
+    outline: none;
 }
 
-#start-button:hover {
+.next-button, .done-button {
+    padding: 10px;
+    margin: auto;
+    margin-left: 20px;
+    background-color: #1E5162;
+    color: #ffffff;
+    border: none;
+    transition: .2s;
+    outline: none;
+}
+
+#start-button:hover, .next-button:hover, .done-button:hover {
     background-color: #296E85;
     cursor: pointer;
     transition: .2s;
 }
 
-#start-button:active {
+#start-button:active, .next-button:active, .done-button:active {
     outline: none;
     background-color: #1E5162;
 }
@@ -70,15 +82,32 @@ button {
     display: none;
 }
 
-#section1 {
+.section {
     background-color: #ADD8E6;
     padding: 20px;
 }
 
-#section1 h1 {
+.section h1 {
     font-size: 3em;
 }
 
-#section1 p {
+.section p {
     padding: 20px 0px 0px 20px;
+}
+
+.section ol {
+    padding-left: 60px;
+}
+
+.single-input {
+    margin-left: 20px;
+    padding-left: 5px;
+    height: 2em;
+    font-family: 'Lato', sans-serif;
+    border: 2px solid #888;
+    outline: none;
+}
+
+.single-input:focus {
+    border: 2px solid #555;
 }
