@@ -29,7 +29,7 @@
             <li>25</li>
             <li>10</li>
         </ol>
-        <input type="text" id="answer1" class="single-input" placeholder="Answer here">
+        <input type="text" id="answer1" class="input" placeholder="Answer here">
         <br>
         
         <p>What is 5.4 + 5.7 + 6.0?</p>
@@ -39,7 +39,7 @@
             <li>16.8</li>
             <li>17.1</li>
         </ol>
-        <input type="text" id="answer2" class="single-input" placeholder="Answer here">
+        <input type="text" id="answer2" class="input" placeholder="Answer here">
         <br>
         
         <p>What is 432 &divide; 2?</p>
@@ -49,7 +49,7 @@
             <li>216</li>
             <li>316</li>
         </ol>
-        <input type="text" id="answer3" class="single-input" placeholder="Answer here">
+        <input type="text" id="answer3" class="input" placeholder="Answer here">
         <br>
         
         <p>What is 4 x 15?</p>
@@ -59,7 +59,7 @@
             <li>60</li>
             <li>30</li>
         </ol>
-        <input type="text" id="answer4" class="single-input" placeholder="Answer here">
+        <input type="text" id="answer4" class="input" placeholder="Answer here">
         <br>
         
         <p>What is '?': 8 x ? = 64</p>
@@ -69,42 +69,42 @@
             <li>1</li>
             <li>6</li>
         </ol>
-        <input type="text" id="answer5" class="single-input" placeholder="Answer here">
+        <input type="text" id="answer5" class="input" placeholder="Answer here">
         <br>
 
         <p id="section-results1" style="display: none;"> </p>
         <br>
-        <button class="done-button" onclick="markSection(1, 1);">Done</button>
+        <button class="done-button" onclick="markMultichoice(1, 1);">Done</button>
         <button id="next-button1" class="next-button" onclick="nextSection('section1','section2');" style="display: none;">Next</button>
     </section> <!-- /section1 -->
 
     <section id="section2" class="section">
         <h1>Section 2 - Shapes</h1>
         <p>How many sides does a cube have?</p>
-        <input type="text" id="answer6" class="single-input" placeholder="Type the number">
+        <input type="text" id="answer6" class="input" placeholder="Type the number">
         <br>
         
         <p>What is a 3D circle called?</p>
-        <input type="text" id="answer7" class="single-input" placeholder="Type the word">
+        <input type="text" id="answer7" class="input" placeholder="Type the word">
         <br>
         
         <p>All sides of a square are...</p>
-        <input type="text" id="answer8" class="single-input" placeholder="One word answer">
+        <input type="text" id="answer8" class="input" placeholder="One word answer">
         <br>
         
         <p>Is this symmetrical?</p>
         <img src="images/asymmetrical-image.jpg" alt="Tree image">
         <br>
-        <input type="text" id="answer9" class="single-input" placeholder="Yes/No">
+        <input type="text" id="answer9" class="input" placeholder="Yes/No">
         <br>
         
         <p>How many sides does a circle have?</p>
-        <input type="text" id="answer10" class="single-input" placeholder="Type the number">
+        <input type="text" id="answer10" class="input" placeholder="Type the number">
         <br>
         
         <p id="section-results2" style="display: none;"> </p>
         <br>
-        <button class="done-button" onclick="markSection(2, 6);">Done</button>
+        <button class="done-button" onclick="markMultichoice(2, 6);">Done</button>
         <button id="next-button2" class="next-button" onclick="nextSection('section2','section3');" style="display: none;">Next</button>
     </section> <!-- /section2 -->
     
@@ -119,10 +119,10 @@
                 <th>Ones</th>
             </tr>
             <tr>
-                <td><input type="text" id="answer11thousands" placeholder="0"></td>
-                <td><input type="text" id="answer11hundreds" placeholder="0"></td>
-                <td><input type="text" id="answer11tens" placeholder="0"></td>
-                <td><input type="text" id="answer11ones" placeholder="0"></td>
+                <td><input type="text" id="answer11thousands" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer11hundreds" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer11tens" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer11ones" placeholder="0" class="input"></td>
             </tr>
         </table>  
         <br>
@@ -136,10 +136,10 @@
                 <th>Ones</th>
             </tr>
             <tr>
-                <td><input type="text" id="answer12thousands" placeholder="0"></td>
-                <td><input type="text" id="answer12hundreds" placeholder="0"></td>
-                <td><input type="text" id="answer12tens" placeholder="0"></td>
-                <td><input type="text" id="answer12ones" placeholder="0"></td>
+                <td><input type="text" id="answer12thousands" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer12hundreds" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer12tens" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer12ones" placeholder="0" class="input"></td>
             </tr>
         </table>  
         <br>
@@ -153,10 +153,10 @@
                 <th>Ones</th>
             </tr>
             <tr>
-                <td><input type="text" id="answer13thousands" placeholder="0"></td>
-                <td><input type="text" id="answer13hundreds" placeholder="0"></td>
-                <td><input type="text" id="answer13tens" placeholder="0"></td>
-                <td><input type="text" id="answer13ones" placeholder="0"></td>
+                <td><input type="text" id="answer13thousands" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer13hundreds" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer13tens" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer13ones" placeholder="0" class="input"></td>
             </tr>
         </table> 
         <br>
@@ -170,10 +170,10 @@
                 <th>Ones</th>
             </tr>
             <tr>
-                <td><input type="text" id="answer14thousands" placeholder="0"></td>
-                <td><input type="text" id="answer14hundreds" placeholder="0"></td>
-                <td><input type="text" id="answer14tens" placeholder="0"></td>
-                <td><input type="text" id="answer14ones" placeholder="0"></td>
+                <td><input type="text" id="answer14thousands" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer14hundreds" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer14tens" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer14ones" placeholder="0" class="input"></td>
             </tr>
         </table> 
         <br>
@@ -187,15 +187,16 @@
                 <th>Ones</th>
             </tr>
             <tr>
-                <td><input type="text" id="answer15thousands" placeholder="0"></td>
-                <td><input type="text" id="answer15hundreds" placeholder="0"></td>
-                <td><input type="text" id="answer15tens" placeholder="0"></td>
-                <td><input type="text" id="answer15ones" placeholder="0"></td>
+                <td><input type="text" id="answer15thousands" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer15hundreds" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer15tens" placeholder="0" class="input"></td>
+                <td><input type="text" id="answer15ones" placeholder="0" class="input"></td>
             </tr>
         </table> 
         <br>
         
-        <button class="done-button">Done</button>
+        <button class="done-button" onclick="markPlaceValue();">Done</button>
+        <button id="next-button2" class="next-button" onclick="nextSection('section2','section3');" style="display: none;">Next</button>
         <p id="section-results3" style="display: none;"></p>
     </section> <!-- /section3 -->
 
