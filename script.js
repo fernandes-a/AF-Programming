@@ -3,7 +3,6 @@ const ANSWERS_MULTICHOICE = ["b", "d", "c", "c", "b", "6", "sphere", "equal", "n
 const ANSWERS_PLACEVALUE = [145, 493, 42, 1000, 7503];
 
 let globalScore = 0;
-
 // This function will hide the current section and show the next when clicked
 function nextSection(currentSection, nextSection) { 
     document.querySelector('#' + currentSection).style.display = "none";
@@ -11,7 +10,7 @@ function nextSection(currentSection, nextSection) {
 }
 
 // This function will check that the answers inputed by the user are correct for the multichoice sections 
-function markMultichoice(sectionNumber, firstQuestion) { 
+function markSection(sectionNumber, firstQuestion) { 
     let i = firstQuestion;
     let sectionScore = 0;
     while (i < (firstQuestion + 5)) {
@@ -34,21 +33,8 @@ function markMultichoice(sectionNumber, firstQuestion) {
 }
 
 // This function will check that answers inputed by the user are correct for the placevalue section
-function markPlaceValue(firstQuestion) {
-    let i = firstQuestion;
-    let sectionScore = 0;
+function markPlacevalue() {
 
-    let thousands = document.querySelector("#answer11thousands").value;
-    let hundreds = document.querySelector("#answer11hundreds").value;
-    let tens = document.querySelector("#answer11tens").value;
-    let ones = document.querySelector("#answer11ones").value;
-
-
-    if (thousands == "" && hundreds == 1 && tens == 4 && ones == 5) {
-        alert("correct");
-    } else {
-        alert("nope");
-    }
 }
 
 // This function will reveal the continue button if they get more than 3 correct answers, otherwise they will have to repeat some questions

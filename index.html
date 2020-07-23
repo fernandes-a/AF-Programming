@@ -62,7 +62,7 @@
         <input type="text" id="answer4" class="input" placeholder="Answer here">
         <br>
         
-        <p>What is '?': 8 x ? = 64</p>
+        <p>What is the '?' in 8 x ? = 64</p>
         <ol>
             <li>4</li>
             <li>8</li>
@@ -74,7 +74,7 @@
 
         <p id="section-results1" style="display: none;"> </p>
         <br>
-        <button class="done-button" onclick="markMultichoice(1, 1);">Done</button>
+        <button class="done-button" onclick="markSection(1, 1);">Done</button>
         <button id="next-button1" class="next-button" onclick="nextSection('section1','section2');" style="display: none;">Next</button>
     </section> <!-- /section1 -->
 
@@ -104,100 +104,36 @@
         
         <p id="section-results2" style="display: none;"> </p>
         <br>
-        <button class="done-button" onclick="markMultichoice(2, 6);">Done</button>
+        <button class="done-button" onclick="markSection(2, 6);">Done</button>
         <button id="next-button2" class="next-button" onclick="nextSection('section2','section3');" style="display: none;">Next</button>
     </section> <!-- /section2 -->
     
     <section id="section3" class="section">
         <h1>Section 3 - Place value</h1>
-        <p>Write 145 on the place value grid below</p>
-        <table>
-            <tr>
-                <th>Thousands</th>
-                <th>Hundreds</th>
-                <th>Tens</th>
-                <th>Ones</th>
-            </tr>
-            <tr>
-                <td><input type="text" id="answer11thousands" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer11hundreds" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer11tens" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer11ones" placeholder="0" class="input"></td>
-            </tr>
-        </table>  
+        <p>What is the number in the tens position of 145?</p>
+        <input type="text" id="answer11" class="input" placeholder="Type the number">
+        <br>
+        
+        <p>What is the number in the hundreds position of 493?</p>
+        <input type="text" id="answer12" class="input" placeholder="Type the number">
         <br>
 
-         <p>Write 493 on the place value grid below</p>
-        <table>
-            <tr>
-                <th>Thousands</th>
-                <th>Hundreds</th>
-                <th>Tens</th>
-                <th>Ones</th>
-            </tr>
-            <tr>
-                <td><input type="text" id="answer12thousands" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer12hundreds" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer12tens" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer12ones" placeholder="0" class="input"></td>
-            </tr>
-        </table>  
+        <p>What is the number in the ones position of 42?</p>
+        <input type="text" id="answer13" class="input" placeholder="Type the number">
+        <br>
+
+        <p>What is the number in the hundreds position of 1000?</p>
+        <input type="text" id="answer14" class="input" placeholder="Type the number">
+        <br>
+
+        <p>What is the number in the thousands position of 7503?</p>
+        <input type="text" id="answer15" class="input" placeholder="Type the number">
         <br>
         
-        <p>Write 42 on the place value grid below</p>
-        <table>
-            <tr>
-                <th>Thousands</th>
-                <th>Hundreds</th>
-                <th>Tens</th>
-                <th>Ones</th>
-            </tr>
-            <tr>
-                <td><input type="text" id="answer13thousands" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer13hundreds" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer13tens" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer13ones" placeholder="0" class="input"></td>
-            </tr>
-        </table> 
+        <p id="section-results3" style="display: none;"> </p>
         <br>
-        
-        <p>Write 1000 on the place value grid below</p>
-        <table>
-            <tr>
-                <th>Thousands</th>
-                <th>Hundreds</th>
-                <th>Tens</th>
-                <th>Ones</th>
-            </tr>
-            <tr>
-                <td><input type="text" id="answer14thousands" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer14hundreds" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer14tens" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer14ones" placeholder="0" class="input"></td>
-            </tr>
-        </table> 
-        <br>
-        
-        <p>Write 7503 on the place value grid below</p>
-        <table>
-            <tr>
-                <th>Thousands</th>
-                <th>Hundreds</th>
-                <th>Tens</th>
-                <th>Ones</th>
-            </tr>
-            <tr>
-                <td><input type="text" id="answer15thousands" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer15hundreds" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer15tens" placeholder="0" class="input"></td>
-                <td><input type="text" id="answer15ones" placeholder="0" class="input"></td>
-            </tr>
-        </table> 
-        <br>
-        
-        <button class="done-button" onclick="markPlaceValue(11);">Done</button>
-        <button id="next-button2" class="next-button" onclick="nextSection('section3','completed-screen');" style="display: none;">Next</button>
-        <p id="section-results3" style="display: none;"></p>
+        <button class="done-button" onclick="markPlaceValue();">Done</button>
+        <button id="next-button3" class="next-button" onclick="nextSection('section3','completed-screen');" style="display: none;">Next</button>
     </section> <!-- /section3 -->
 
     <section id="completed-screen">
