@@ -9,7 +9,7 @@ body {
     margin: 10px;
 }
 
-#opening-screen, #section2, #section1, #completed-screen {
+#opening-screen, #section2, #section1, #section3 {
     display: none;
 }
 
@@ -26,19 +26,19 @@ button {
 
 }
 
-#opening-screen {
+#opening-screen, #completed-screen {
     background-color: #ADD8E6;
     height: calc(100vh - 20px);
 }
 
-#opening-screen h1 {
+#opening-screen, #completed-screen h1 {
     text-align: center;
     font-size: 3em;
     padding-top: 80px;
     padding-bottom: 20px;
 }
 
-#opening-screen p {
+#opening-screen, #completed-screen p {
     padding: 0 20px;
 }
 
@@ -102,4 +102,21 @@ button {
 
 #section3 p{
     margin-bottom: 10px;
+}
+
+#completed-screen p {
+    text-align: center;
+}
+
+#completed-screen img {
+    width: calc((100vw - 20px)/4);
+    display: block;
+    margin: auto;
+}
+
+ #completed-screen #confetti-gif {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    position: absolute;
+    z-index: 999;
 }

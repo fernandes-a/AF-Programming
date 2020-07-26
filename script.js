@@ -1,5 +1,5 @@
 // This variable provides the answers that the test will be marked against
-const ANSWERS_MULTICHOICE = ["b", "d", "c", "c", "b", "6", "sphere", "equal", "no", "0"]; 
+const ANSWERS = ["b", "d", "c", "c", "b", "6", "sphere", "equal", "no", "0", "4", "4", "2", "0", "7"]; 
 const ANSWERS_PLACEVALUE = [145, 493, 42, 1000, 7503];
 
 let globalScore = 0;
@@ -9,7 +9,7 @@ function nextSection(currentSection, nextSection) {
     document.querySelector('#' + nextSection).style.display = "block";
 }
 
-// This function will check that the answers inputed by the user are correct for the multichoice sections 
+// This function will check that the answers inputed by the user are correct 
 function markSection(sectionNumber, firstQuestion) { 
     let i = firstQuestion;
     let sectionScore = 0;
@@ -17,7 +17,7 @@ function markSection(sectionNumber, firstQuestion) {
         let input = document.querySelector("#answer" + i);
         input = input.value;
 
-        if (input == ANSWERS_MULTICHOICE[(i-1)]) {
+        if (input == ANSWERS[(i-1)]) {
             document.querySelector("#answer" + i).style = "background-color:#bcfcb0;";
             sectionScore++;
         } else {
@@ -30,11 +30,6 @@ function markSection(sectionNumber, firstQuestion) {
 
     globalScore=+ sectionScore;
     return i;
-}
-
-// This function will check that answers inputed by the user are correct for the placevalue section
-function markPlacevalue() {
-
 }
 
 // This function will reveal the continue button if they get more than 3 correct answers, otherwise they will have to repeat some questions
