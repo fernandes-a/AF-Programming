@@ -9,7 +9,7 @@ body {
     margin: 10px;
 }
 
-#opening-screen, #section2, #section1, #section3 {
+#section1, #section2, #section3, #completed-screen {
     display: none;
 }
 
@@ -31,7 +31,7 @@ button {
     height: calc(100vh - 20px);
 }
 
-#opening-screen, #completed-screen h1 {
+#opening-screen h1, #completed-screen h1 {
     text-align: center;
     font-size: 3em;
     padding-top: 80px;

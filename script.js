@@ -27,9 +27,6 @@ function markSection(sectionNumber, firstQuestion) {
     }
 
     allowContinue(sectionNumber, sectionScore);
-
-    globalScore=+ sectionScore;
-    return i;
 }
 
 // This function will reveal the continue button if they get more than 3 correct answers, otherwise they will have to repeat some questions
@@ -39,7 +36,16 @@ function allowContinue(sectionNumber, sectionScore) {
     if (sectionScore > 3) {
         comment.innerHTML = `Well done! You got ${sectionScore}/5`;
         document.querySelector('#next-button' + sectionNumber).style.display = "inline";
+
+        globalScore += sectionScore;
     } else {
         comment.innerHTML = `You got ${sectionScore}/5, you should try again to move onto the next section`;
     }
+
+    return globalScore;
+}
+
+function shareResults() {
+    let score = document.querySelector('#test-results');
+    score.innerHTML = `You got ${globalScore}/15!!`
 }
