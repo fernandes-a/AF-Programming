@@ -1,8 +1,9 @@
 // This variable provides the answers that the test will be marked against
 const ANSWERS = ["b", "d", "c", "c", "b", "6", "sphere", "equal", "no", "0", "4", "4", "2", "0", "7"]; 
-const ANSWERS_PLACEVALUE = [145, 493, 42, 1000, 7503];
 
+// Defines the global score and sets it to 0 at the begining of the test
 let globalScore = 0;
+
 // This function will hide the current section and show the next when clicked
 function nextSection(currentSection, nextSection) { 
     document.querySelector('#' + currentSection).style.display = "none";
@@ -13,11 +14,11 @@ function nextSection(currentSection, nextSection) {
 function markSection(sectionNumber, firstQuestion) { 
     let i = firstQuestion;
     let sectionScore = 0;
-    while (i < (firstQuestion + 5)) {
+    while (i < (firstQuestion + 5)) { // Ensures that it only attempts to mark 5 questions
         let input = document.querySelector("#answer" + i);
         input = input.value;
 
-        if (input == ANSWERS[(i-1)]) {
+        if (input == ANSWERS[(i-1)]) { // If the input = the corect answer from the variable defined above...
             document.querySelector("#answer" + i).style = "background-color:#bcfcb0;";
             sectionScore++;
         } else {
@@ -35,7 +36,7 @@ function allowContinue(sectionNumber, sectionScore) {
     comment.style.display = "block";
     if (sectionScore > 3) {
         comment.innerHTML = `Well done! You got ${sectionScore}/5`;
-        document.querySelector('#next-button' + sectionNumber).style.display = "inline";
+        document.querySelector('#next-button' + sectionNumber).style.display = "inline"; // Shows the continue button
 
         globalScore += sectionScore;
     } else {
@@ -45,6 +46,7 @@ function allowContinue(sectionNumber, sectionScore) {
     return globalScore;
 }
 
+// This function will reveal the results for the whole test
 function shareResults() {
     let score = document.querySelector('#test-results');
     score.innerHTML = `You got ${globalScore}/15!!`
