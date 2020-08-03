@@ -1,5 +1,5 @@
 // This variable provides the answers that the test will be marked against
-const ANSWERS = ["b", "d", "c", "c", "b", 6, "sphere", "equal", "no", "0", "4", "4", "2", "0", "7"]; 
+const ANSWERS = ["b", "d", "c", "c", "b", "6", "sphere", "equal", "no", "0", "4", "4", "2", "0", "7"]; 
 
 // Defines the global score and sets it to 0 at the begining of the test
 let globalScore = 0;
@@ -28,6 +28,24 @@ function markSection(sectionNumber, firstQuestion) {
     }
 
     allowContinue(sectionNumber, sectionScore);
+}
+
+// This function will check that they have answered the question in the correct way
+function inputCheck() {
+    let correction = document.querySelector("#answer" + i + "correction");
+    correction.innerHTML = "";
+
+    if(input == "") { // If input is left empty...
+        correction.innerHTML = "Please answer the question";
+    }
+
+    if(isANumber == true) { // If the answer is supposed to be a number
+        try {
+            isNaN(input); 
+        } catch (error) { // but isn't, tell them to answer with a number
+            correction.innerHTML = "Please answer with a number";
+        } 
+    }
 }
 
 // This function will reveal the continue button if they get more than 3 correct answers, otherwise they will have to repeat some questions

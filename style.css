@@ -100,10 +100,6 @@ button {
     border: 2px solid #555;
 }
 
-#section3 p{
-    margin-bottom: 10px;
-}
-
 #completed-screen p {
     text-align: center;
 }
@@ -119,4 +115,10 @@ button {
     height: calc(100vh - 20px);
     position: absolute;
     z-index: 999;
+}
+
+p.feedback { 
+    padding-top: 5px;
+    font-style: italic;
+    font-size: smaller;
 }
