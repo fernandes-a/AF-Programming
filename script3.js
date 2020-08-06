@@ -6,8 +6,9 @@ let globalScore = 0;
 
 // This function will hide the current section and show the next when clicked
 function nextSection(currentSection, nextSection) { 
-    document.querySelector('#' + currentSection).style.display = "none";
-    document.querySelector('#' + nextSection).style.display = "block";
+    document.querySelector('#' + currentSection).style.display = "none"; // Hides current section
+    document.querySelector('#' + nextSection).style.display = "block"; // Shows next section
+    window.scrollTo(0,0); // Scrolls to the top of the page
 }
 
 // This function will check that they have answered the question in the correct way
@@ -38,6 +39,8 @@ function inputCheck(sectionNumber, firstQuestion) {
 
     if (invalidInput == 0) { // If no answers are invalid, move on to marking
         markSection(sectionNumber, firstQuestion);
+    } else { // If some answers are invalid, scroll to the top of the page
+        window.scrollTo(0,0);
     }
 }
 
