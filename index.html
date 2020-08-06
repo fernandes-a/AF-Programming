@@ -74,7 +74,7 @@
 
         <p id="section-results1" style="display: none;"> </p>
         <br>
-        <button id="done-button1" class="done-button" onclick="markSection(1, 1);">Done</button>
+        <button id="done-button1" class="done-button" onclick="inputCheck(1, 1);">Done</button>
         <button id="next-button1" class="next-button" onclick="nextSection('section1','section2');" style="display: none;">Next</button>
     </section> <!-- /section1 -->
 
@@ -82,29 +82,29 @@
         <h1>Section 2 - Shapes</h1>
         <p>How many sides does a cube have?</p>
         <input type="text" id="answer6" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer6correction" class="feedback"></p>
         
         <p>What is a 3D circle called?</p>
         <input type="text" id="answer7" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer7correction" class="feedback"></p>
         
         <p>All sides of a square are...</p>
         <input type="text" id="answer8" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer8correction" class="feedback"></p>
         
         <p>Is this symmetrical?</p>
         <img src="images/asymmetrical-image.jpg" alt="Tree image">
         <br>
         <input type="text" id="answer9" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer9correction" class="feedback"></p>
         
         <p>How many sides does a circle have?</p>
         <input type="text" id="answer10" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer10correction" class="feedback"></p>
         
         <p id="section-results2" style="display: none;"> </p>
         <br>
-        <button id="done-button2" class="done-button" onclick="markSection(2, 6);">Done</button>
+        <button id="done-button2" class="done-button" onclick="inputCheck(2, 6);">Done</button>
         <button id="next-button2" class="next-button" onclick="nextSection('section2','section3');" style="display: none;">Next</button>
     </section> <!-- /section2 -->
     
@@ -112,27 +112,27 @@
         <h1>Section 3 - Place value</h1>
         <p>What is the number in the tens position of 145?</p>
         <input type="text" id="answer11" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer11correction" class="feedback"></p>
         
         <p>What is the number in the hundreds position of 493?</p>
         <input type="text" id="answer12" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer12correction" class="feedback"></p>
 
         <p>What is the number in the ones position of 42?</p>
         <input type="text" id="answer13" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer13correction" class="feedback"></p>
 
         <p>What is the number in the hundreds position of 1000?</p>
         <input type="text" id="answer14" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer14correction" class="feedback"></p>
 
         <p>What is the number in the thousands position of 7503?</p>
         <input type="text" id="answer15" class="input" placeholder="Answer here">
-        <br>
+        <p id="answer15correction" class="feedback"></p>
         
         <p id="section-results3" style="display: none;"> </p>
         <br>
-        <button id="done-button3" class="done-button" onclick="markSection(3, 11);">Done</button>
+        <button id="done-button3" class="done-button" onclick="inputCheck(3, 11);">Done</button>
         <button id="next-button3" class="next-button" onclick="nextSection('section3','completed-screen'); shareResults();" style="display: none;">Next</button>
     </section> <!-- /section3 -->
 
@@ -148,6 +148,6 @@
         <img src="images/dancing-parrot.gif" alt="disco parrot">
     </section> <!-- /completed-screen-->
 
-    <script src="script2.js"></script>
+    <script src="script3.js"></script>
 </body>
 </html>
